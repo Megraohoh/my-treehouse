@@ -12,7 +12,6 @@ function sendToDom(xhrData){
  
  		houseString += ` <div class="col-xs-6 col-md-3">`;
 	    houseString += `<img src="${currentBadge.icon_url}" alt="treehouse badges">`;
-	    houseString += `<h3>Treehouse Profile</h3>`;
 	    houseString += `</div>`;
 
  	}
