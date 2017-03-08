@@ -1,8 +1,29 @@
-var myRequest = new XMLHttpRequest(); 
+var treehouseContainer = document.getElementById("treehouseContainer");
+
+
+function sendToDom(xhrData){
+
+	var houseString = "";
+	var currentBadge;
+ 	
+ 
+ 	for(var i=0; i<xhrData.badges.length; i++){
+ 		currentBadge = xhrData.badges[i];
+ 
+ 		houseString += ` <div class="col-xs-6 col-md-3">`;
+	    houseString += `<img src="${currentBadge.icon_url}" alt="treehouse badges">`;
+	    houseString += `<h3>Treehouse Profile</h3>`;
+	    houseString += `</div>`;
+
+ 	}
+
+ 	treehouseContainer.innerHTML = houseString;	
+ }
 
 function executeThisCodeAfterFileLoaded(){
 	var data = JSON.parse(this.responseText);
 	console.log("myTreehouseData", data);
+	sendToDom(data);
 	
 }
 
@@ -10,6 +31,7 @@ function executeThisCodeAfterFileFails(){
 
 }
 
+var myRequest = new XMLHttpRequest();
 
 myRequest.addEventListener("load", executeThisCodeAfterFileLoaded);
 myRequest.addEventListener("error", executeThisCodeAfterFileFails);
@@ -21,25 +43,13 @@ myRequest.send();
 
 
 
-// var treehouseContainer = document.getElementById("treehouseContainer");
 
-// function sendToDom(xhrData){
-// 	var houseString = "";
-// 	var currentHouse;
 
-// 	for(var i=0; i<xhrData.myTreehouse.length; i++){
-// 		currentHouse = xhrData.myTreehouse[i];
 
-// 		houseString += `<div class="col-sm-6 col-md-4">`;
-//     	houseString += `<div class="thumbnail">`;
-//         houseString += `<img src="${currentHouse.url}" alt="Meghan's Treehouse Profile">`;
-//         houseString += `<div class="caption">`;
-//         houseString += `<h3>Treehouse Profile</h3>`;
-//         // houseString += `<p></p>`;
-//         // houseString += `<p></p>`;
-//         houseString += `</div></div></div>`;
-// 	}
-	
-// 	treehouseContainer = houseString;	
-// }
+
+
+
+
+
+
 
