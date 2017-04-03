@@ -7,7 +7,10 @@
 > All requirements are met.  
 
 
-![Screenshot]((https://raw.githubusercontent.com/Megraohoh/my-treehouse/master/screenshots/Screen%20Shot%202017-03-07%20at%207.51.09%20PM.png)
+![Screenshot](https://raw.githubusercontent.com/Megraohoh/my-treehouse/treeindex/screenshots/Screen%20Shot%202017-04-02%20at%209.52.29%20PM.png)
+![Screenshot](https://raw.githubusercontent.com/Megraohoh/my-treehouse/treeindex/screenshots/Screen%20Shot%202017-04-02%20at%209.52.38%20PM.png)
+![Screenshot](https://raw.githubusercontent.com/Megraohoh/my-treehouse/treeindex/screenshots/Screen%20Shot%202017-04-02%20at%209.52.48%20PM.png)
+![Screenshot](https://raw.githubusercontent.com/Megraohoh/my-treehouse/treeindex/screenshots/Screen%20Shot%202017-04-02%20at%209.52.57%20PM.png)
 
 
 ### How to run :
